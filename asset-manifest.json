@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/sam-portfolio/static/css/main.ec668366.css",
-    "main.js": "/sam-portfolio/static/js/main.91ee732b.js",
+    "main.css": "/sam-portfolio/static/css/main.d3e83d05.css",
+    "main.js": "/sam-portfolio/static/js/main.f8f3e4d4.js",
     "static/js/787.861fdc3f.chunk.js": "/sam-portfolio/static/js/787.861fdc3f.chunk.js",
     "static/media/nasa.png": "/sam-portfolio/static/media/nasa.53c8b984cb0cadb8656c.png",
     "static/media/face.png": "/sam-portfolio/static/media/face.53855f6b1b22c80a306a.png",
     "static/media/ucla.png": "/sam-portfolio/static/media/ucla.74dd6cbb9e19d10198fc.png",
     "static/media/ibm.png": "/sam-portfolio/static/media/ibm.491cf98a658caf013633.png",
     "index.html": "/sam-portfolio/index.html",
-    "main.ec668366.css.map": "/sam-portfolio/static/css/main.ec668366.css.map",
-    "main.91ee732b.js.map": "/sam-portfolio/static/js/main.91ee732b.js.map",
+    "main.d3e83d05.css.map": "/sam-portfolio/static/css/main.d3e83d05.css.map",
+    "main.f8f3e4d4.js.map": "/sam-portfolio/static/js/main.f8f3e4d4.js.map",
     "787.861fdc3f.chunk.js.map": "/sam-portfolio/static/js/787.861fdc3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec668366.css",
-    "static/js/main.91ee732b.js"
+    "static/css/main.d3e83d05.css",
+    "static/js/main.f8f3e4d4.js"
   ]
 }
