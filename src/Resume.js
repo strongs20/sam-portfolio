@@ -8,13 +8,34 @@ import Face from './assets/face.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DescriptionIcon from '@mui/icons-material/Description';
+import { useState, useEffect } from 'react';
+
+const useMobileScreen = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return isMobile;
+};
 
 const Resume = () => {
+  const isMobile = useMobileScreen();
+
   return (
     <div className='page-container'>
       <div className='page-content'>
-        <div style={{display:"flex"}}>
-          <div className='top-section'>
+        <div className='top-section'>
+          <div className='top-section-text'>
+            {isMobile && <div className='top-photo'>
+            <img src={Face} alt="Cap & Gown Shot"/>
+          </div>}
             <h1>Samuel Strong</h1>
             <p>(818) 851 2288 | samuelstrong@ucla.edu</p>
             <div className='top-buttons'>
@@ -23,9 +44,9 @@ const Resume = () => {
               <a className='top-btn' href="https://docs.google.com/document/d/1GPeY-Djt5y4jBHrQjGcYcHXSJtga17y2SphFIoQ0EZY/edit" target="_blank" rel="noopener noreferrer"><DescriptionIcon/>&nbsp;Resume</a>
             </div>
           </div>
-          <div className='top-photo'>
+          {!isMobile && <div className='top-photo'>
             <img src={Face} alt="Cap & Gown Shot"/>
-          </div>
+          </div>}
         </div>
 
         <div className='section'>

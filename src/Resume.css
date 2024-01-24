@@ -35,7 +35,6 @@ li {
 }
 
 .top-photo {
-  margin-left: auto;
   margin-bottom: -25px;
   width: 170px;
   height: 170px;
@@ -49,9 +48,27 @@ li {
   overflow: hidden;
 }
 
-/* .top-section{
-  margin-top: 30px;
-} */
+.top-section {
+  display: flex;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .top-section {
+    display: block;
+  }
+
+  .top-photo {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 769px) {
+  .top-photo {
+    margin-left: auto;
+  }
+}
 
 .top-buttons {
   display: flex;
