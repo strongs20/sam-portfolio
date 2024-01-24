@@ -53,7 +53,7 @@ li {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .top-section {
     display: block;
   }
@@ -64,7 +64,7 @@ li {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .top-photo {
     margin-left: auto;
   }
